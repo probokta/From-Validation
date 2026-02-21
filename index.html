@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Matrimonial Biodata</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="biodata-container">
+
+    <h1>BIODATA</h1>
+    <h2>PERSONAL INFORMATION</h2>
+
+    <form id="biodataForm" novalidate>
+
+    <div class="top-section">
+
+        <div class="form-left">
+            <table>
+                <tr><td class="label">Name</td><td><input id="fullName" type="text" placeholder="Mirza Anonno Probokta" required></td></tr>
+                <tr><td class="label">Birthdate</td><td><input id="birthDate" type="text" placeholder="YYYY-MM-DD" required></td></tr>
+                <tr><td class="label">Birth Time</td><td><input id="birthTime" type="time" required></td></tr>
+                <tr><td class="label">Birth Place</td><td><input id="birthPlace" type="text" placeholder="Pabna" required></td></tr>
+                <tr><td class="label">Religion</td><td><input id="religion" type="text" placeholder="Islam" required></td></tr>
+                <tr><td class="label">Caste</td><td><input id="caste" type="text" placeholder="Mirza" required></td></tr>
+                <tr><td class="label">Height</td><td><input id="height" type="text" placeholder="e.g. 5 ft 6 in" required></td></tr>
+                <tr>
+                    <td class="label">Blood Group</td>
+                    <td>
+                        <select id="bloodGroup" required>
+                            <option value="">Select blood group</option>
+                            <option value="A+">A+</option><option value="A-">A-</option>
+                            <option value="B+">B+</option><option value="B-">B-</option>
+                            <option value="O+">O+</option><option value="O-">O-</option>
+                            <option value="AB+">AB+</option><option value="AB-">AB-</option>
+                        </select>
+                    </td>
+                </tr>
+                
+                <tr><td class="label">Education</td><td><input id="education" type="text" placeholder="BSC in CSE" required></td></tr>
+                <tr><td class="label">Occupation</td><td><input id="occupation" type="text" placeholder="Junior UI/UX Designer" required></td></tr>
+            </table>
+        </div>
+
+        <div class="photo-box">
+            <img id="preview" src="IMG_20251019_221944_351_1760890820097.jpg" alt="Photo Preview" class="photo-preview"><br>
+            <br>
+            <input id="photoUpload" type="file" accept="image/*">
+            <div class="photo-text">Upload your photo</div>
+        </div>
+
+    </div>
+
+    <div class="section-title">FAMILY INFORMATION</div>
+
+    <table>
+        <tr><td class="label">Father Name</td><td><input id="fatherName" type="text" placeholder="Mirza MD Alamgir Hossain" required></td></tr>
+        <tr><td class="label">Occupation</td><td><input id="fatherOccupation" type="text" placeholder="Businessman" required></td></tr>
+        <tr><td class="label">Mother Name</td><td><input id="motherName" type="text" placeholder="Hira Sultana" required></td></tr>
+        <tr><td class="label">Sisters</td><td><input id="sisters" type="text" placeholder="e.g. 1 (0 Married)" required></td></tr>
+        <tr><td class="label">Brothers</td><td><input id="brothers" type="text" placeholder="e.g. 2 (1 Married)" required></td></tr>
+        <tr><td class="label">Contact No.</td><td><input id="contact" type="tel" placeholder="01900000000" required pattern="^(?:\\+?88)?01[3-9]\\d{8}$"></td></tr>
+        <tr><td class="label">Address</td><td><textarea id="address" rows="3" placeholder="House 620, Gazipur Sadar, Gazipur" required></textarea></td></tr>
+    </table>
+
+    <div class="form-actions">
+        <button type="submit">Submit Biodata</button>
+    </div>
+
+    </form>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
